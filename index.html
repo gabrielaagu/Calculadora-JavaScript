@@ -15,7 +15,7 @@
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> Calculadora
+                    <img src="https://cdn.pixabay.com/photo/2019/06/19/15/41/calculator-4285211_960_720.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> Calculadora
                 </a>
             </div>
         </nav>
@@ -26,46 +26,49 @@
                 <div class="col-12">
                     <h2>Calculadora inteligente</h2>
                 </div>
-                <div class="col-12 op__sections output">
-                    <div data-previous-operand class="previous-operand"></div>
-                    <div data-current-operand class="current-operand"></div>
-                </div>
+
+                <div class="row" id="result">
+                    <form name="calc">
+                      <input type="text" class="previous-operand" name="historico" readonly>
+                      <input type="text" class="current-operand" name="result" readonly>
+          
+                    </form>
+                  </div>
                 <div class="col-12 op__sections">
                     <div class="container">
                         <div class="row op__buttons">
                             <div class="col-12">
-                                <button data-all-clear class="span-two" id="reset">AC</button>
-                                <button data-delete>DEL</button>
-                                <button data-number>.</button>
+                                <button id="allClear" type="button" class="btn btn-danger" onclick="clearScreen()">AC</button>
+                                <button id="clear" type="button" class="btn btn-warning" onclick="clearScreen()">DEL</button>
+                                <button id="." type="button" class="btn btn-info" onclick="myFunction(this.id)">.</button>
                             </div>
                             <div class="col-12">
-                                <button data-number id="uno">1</button>
-                                <button data-number id="dos">2</button>
-                                <button data-number id="tres">3</button>
-                                <button data-number id="cuatro">4</button>
-                                <button data-number id="cinco">5</button>
-                                <button data-number id="seis">6</button>
-                                <button data-number id="siete">7</button>
-                                <button data-number id="ocho">8</button>
-                                <button data-number id="nueve">9</button>
-                                <button data-number id="cero">0</button>
+                                <button id="1" type="button" class="btn btn-info" onclick="myFunction(this.id)">1</button>
+                                <button id="2" type="button" class="btn btn-info" onclick="myFunction(this.id)">2</button>
+                                <button id="3" type="button" class="btn btn-info" onclick="myFunction(this.id)">3</button>
+                                <button id="4" type="button" class="btn btn-info" onclick="myFunction(this.id)">4</button>
+                                <button id="5" type="button" class="btn btn-info" onclick="myFunction(this.id)">5</button>
+                                <button id="6" type="button" class="btn btn-info" onclick="myFunction(this.id)">6</button>
+                                <button id="7" type="button" class="btn btn-info" onclick="myFunction(this.id)">7</button>
+                                <button id="8" type="button" class="btn btn-info" onclick="myFunction(this.id)">8</button>
+                                <button id="9" type="button" class="btn btn-info" onclick="myFunction(this.id)">9</button>
+                                <button id="0" type="button" class="btn btn-info" onclick="myFunction(this.id)">0</button>
                             </div>
                         </div>
                         <div class="row op__buttons">
                             <div class="col-6">
-                                <button data-operation id="sumar">+</button>
-                                <button data-operation id="restar">-</button>
-                                <button data-operation id="multiplicar">*</button>
+                                <button id="+" type="button" class="btn btn-info" onclick="myFunction(this.id)">+</button>
+                                <button id="-" type="button" class="btn btn-info" onclick="myFunction(this.id)">-</button>
+                                <button id="*" type="button" class="btn btn-info" onclick="myFunction(this.id)">*</button>
                             </div>
                             <div class="col-6">
-                                <button data-operation id="dividir">/</button>
-                                <button data-operation id="porcentaje">%</button>
-                                <button data-operation id="raiz">^</button>
+                                <button id="/" type="button" class="btn btn-info" onclick="myFunction(this.id)">÷</button>
+                                <button id="%" type="button" class="btn btn-info" onclick="myFunction(this.id)">%</button>
                             </div>
                         </div>
                         <div class="row text-center">
                             <div class="col-12">
-                                <button data-equals id="igual">=</button>
+                                <button id="equals" type="button" class="btn btn-success" onclick="calculate()">=</button>
                             </div>
                         </div>
                     </div>
