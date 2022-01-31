@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #cbce91ff, #ea738dff);
+    background: linear-gradient(to right, #F2854B, #F2544B);
 }
 
 h2 {
@@ -66,4 +66,39 @@ button {
 .output .current-operand {
     color: white;
     font-size: 2.5rem;
+}
+
+#section-juego {
+    padding: 10px;
+    color: #ffffff;
+}
+
+.resultado {
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.opciones {
+    text-align: center;
+    margin: 50px 0;
+    display: flex;
+}
+
+.opcion {
+    width: 30vw;
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+}
+
+img {
+    width: 20vw;
+    height: 40vh;
+}
+
+.opcion:hover {
+    background-color: #C0392B;
+    cursor: pointer;
+    border-radius: 50%;
 }

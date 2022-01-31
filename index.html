@@ -15,7 +15,7 @@
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="https://cdn.pixabay.com/photo/2019/06/19/15/41/calculator-4285211_960_720.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> Calculadora
+                    <img src="./assets/img/calculadora.png" alt="calculadora" width="30px" height="10px" class="d-inline-block align-text-top" id="img-calculadora"> Calculadora
                 </a>
             </div>
         </nav>
@@ -29,11 +29,11 @@
 
                 <div class="row" id="result">
                     <form name="calc">
-                      <input type="text" class="previous-operand" name="historico" readonly>
-                      <input type="text" class="current-operand" name="result" readonly>
-          
+                        <input type="text" class="previous-operand" name="historico" readonly>
+                        <input type="text" class="current-operand" name="result" readonly>
+
                     </form>
-                  </div>
+                </div>
                 <div class="col-12 op__sections">
                     <div class="container">
                         <div class="row op__buttons">
@@ -69,12 +69,37 @@
                         <div class="row text-center">
                             <div class="col-12">
                                 <button id="equals" type="button" class="btn btn-success" onclick="calculate()">=</button>
+                                <hr>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+
+    <section align="center" id="section-juego">
+        <h1>Juega al piedra papel o tijera</h1>
+
+        <div class="resultado-juego" id="resultado-juego">
+            Jueguemos!
+        </div>
+
+        <div class="opciones">
+            <div class="opcion" id="papel">
+                <img src="./assets/img/papel.png" alt="">
+            </div>
+
+            <div class="opcion" id="piedra">
+                <img src="./assets/img/piedra.png" alt="">
+            </div>
+
+            <div class="opcion" id="tijera">
+                <img src="./assets/img/tijera.png" alt="">
+            </div>
+        </div>
+
     </section>
 </body>
 
