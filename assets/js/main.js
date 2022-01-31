@@ -56,13 +56,13 @@ function iniciarJuego(opcion) {
     const comp = comparacion(movPc, movUsuario);
     //resultado
     if (comp == 1) {
-        resultadoJuego.innerHTML = " Tu eliges " + movUsuario + "<br> El ordenador elige " + movPc + "<br> <span class='ganador'>Has ganado!😄</span>";
+        resultadoJuego.innerHTML = " Tu eliges: " + movUsuario + "<br> El ordenador elige: " + movPc + "<br> <span class='ganador'>Has ganado!😄</span>";
     }
     if (comp == 2) {
-        resultadoJuego.innerHTML = " Tu eliges " + movUsuario + "<br> El ordenador elige " + movPc + "<br> <span class='perdedor'>Has perdido😥</span>";
+        resultadoJuego.innerHTML = " Tu eliges: " + movUsuario + "<br> El ordenador elige: " + movPc + "<br> <span class='perdedor'>Has perdido😥</span>";
     }
     if (comp == 3) {
-        resultadoJuego.innerHTML = " Tu eliges " + movUsuario + "<br> El ordenador elige " + movPc + "<br> <span class='empate'>Ha habido un  empate 🤨</span>";
+        resultadoJuego.innerHTML = " Tu eliges: " + movUsuario + "<br> El ordenador elige: " + movPc + "<br> <span class='empate'>Ha habido un  empate 🤨</span>";
     }
 };
 
